@@ -1,4 +1,4 @@
-baseURL = "https://quartz.jzhao.xyz/"
+baseURL = "https://puppygirlbelly.github.io/PuppyBrained/"
 languageCode = "en-us"
 relativeURLs = false
 disablePathToLower = true
@@ -25,7 +25,7 @@ enableGitInfo = true
         lineNoStart = 1
         lineNos = true
         lineNumbersInTable = true
-        style = "dracula"
+        style = "nord"
     [frontmatter]
         lastmod = ["lastmod", ":git", "date", "publishDate"]
         publishDate = ["publishDate", "date"]

@@ -1,15 +1,15 @@
 <!-- set data/config yaml file based on website language -->
 {{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}
 {{ $data := index $.Site.Data $config }}
+
 <head>
   <!-- Meta tags -->
   <meta charset="UTF-8" />
-  <meta
-    name="description"
-    content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}"
-  />
+  <meta name="description"
+    content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}" />
   <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}">
+  <meta property="og:description"
+    content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}">
   <meta property="og:type" content="website">
   <meta property="og:image" content="{{.Site.BaseURL}}icon.png">
   <meta property="og:url" content="{{ .Permalink }}">
@@ -17,13 +17,14 @@
   <meta property="og:height" content="200">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:description" content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}" />
+  <meta name="twitter:description"
+    content="{{if .IsHome}}{{$data.description | default $.Site.Data.config.description}}{{else}}{{.Summary}}{{end}}" />
   <meta name="twitter:image" content="{{.Site.BaseURL}}icon.png">
   {{ range $data.links }}
-    {{ if strings.Contains .link "twitter.com" }}
-      {{ $twitter_handle := index (split .link "/") (sub (len (split .link "/")) 1) }}
-      <meta name="twitter:site" content="{{ $twitter_handle }}" />
-    {{ end }}
+  {{ if strings.Contains .link "twitter.com" }}
+  {{ $twitter_handle := index (split .link "/") (sub (len (split .link "/")) 1) }}
+  <meta name="twitter:site" content="{{ $twitter_handle }}" />
+  {{ end }}
   {{ end }}
 
   <title>
@@ -33,13 +34,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- HTML Favicon -->
-  {{ $favicon := $data.favicon  | default $.Site.Data.config.favicon | default (slice (dict "rel" "shortcut icon" "type" "image/png" "href" "icon.png")) }}
+  {{ $favicon := $data.favicon | default $.Site.Data.config.favicon | default (slice (dict "rel" "shortcut icon" "type"
+  "image/png" "href" "icon.png")) }}
   {{ $type := (printf "%T" $favicon) }}
   {{ if eq $type "string" }}
   {{ $favicon | safeHTML }}
   {{ else }}
   {{ range $favicon }}
-  <link rel="{{.rel}}" {{if .type}}type="{{.type}}"{{end}} {{if .sizes}}sizes="{{.sizes}}"{{end}} href="{{$.Site.BaseURL}}/{{.href}}" />
+  <link rel="{{.rel}}" {{if .type}}type="{{.type}}" {{end}} {{if .sizes}}sizes="{{.sizes}}" {{end}}
+    href="{{$.Site.BaseURL}}/{{.href}}" />
   {{- end }}
   {{ end }}
 
@@ -51,28 +54,30 @@
   {{$css = $css | append $scss}}
   {{end}}
   {{if $data.enableCallouts | default $.Site.Data.config.enableCallouts}}
-    {{$scss := resources.Get "styles/_callouts.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
-    {{$css = $css | append $scss}}
+  {{$scss := resources.Get "styles/_callouts.scss" | resources.ToCSS (dict "outputStyle" "compressed") }}
+  {{$css = $css | append $scss}}
   {{end}}
-  {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5" | resources.Minify  }}
+  {{$finalCss := $css | resources.Concat "styles.css" | resources.Fingerprint "md5" | resources.Minify }}
   <link href="{{$finalCss.Permalink}}" rel="stylesheet" />
 
-  {{$lightSyntax := resources.Get "styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") | resources.Fingerprint "md5" | resources.Minify  }}
+  {{$lightSyntax := resources.Get "styles/_light_syntax.scss" | resources.ToCSS (dict "outputStyle" "compressed") |
+  resources.Fingerprint "md5" | resources.Minify }}
   <link href="{{$lightSyntax.Permalink}}" rel="stylesheet" id="theme-link">
 
-   <!-- Base scripts -->
+  <!-- Base scripts -->
   {{$scripts := (slice "js/darkmode.js" "js/util.js")}}
   {{range $scripts}}
   {{$scriptname := .}}
-  {{ $s := resources.Get $scriptname | resources.ExecuteAsTemplate $scriptname . | resources.Fingerprint "md5" | resources.Minify }}
+  {{ $s := resources.Get $scriptname | resources.ExecuteAsTemplate $scriptname . | resources.Fingerprint "md5" |
+  resources.Minify }}
   <script src="{{$s.Permalink}}"></script>
   {{end}}
   {{partial "katex.html" .}}
 
   {{partial "mermaid.html" .}}
 
-  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script> -->
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script defer src="{{$popover.Permalink}}"></script>
@@ -101,25 +106,25 @@
   <script>
     const SEARCH_ENABLED = {{.Site.Data.config.search.enableSemanticSearch}}
     const LATEX_ENABLED = {{.Site.Data.config.enableLatex}}
-    const PRODUCTION = {{ hugo.IsProduction }}
+    const PRODUCTION = {{hugo.IsProduction}}
     const BASE_URL = {{.Site.BaseURL}}
     const fetchData = Promise.all([
-          fetch("{{ $linkIndex.Permalink }}")
-            .then(data => data.json())
-            .then(data => ({
-              index: data.index,
-              links: data.links,
-            })),
-          fetch("{{ $contentIndex.Permalink }}")
-            .then(data => data.json()),
-        ])
-        .then(([{index, links}, content]) => ({
-          index,
-          links,
-          content,
-        }))
+      fetch("{{ $linkIndex.Permalink }}")
+        .then(data => data.json())
+        .then(data => ({
+          index: data.index,
+          links: data.links,
+        })),
+      fetch("{{ $contentIndex.Permalink }}")
+        .then(data => data.json()),
+    ])
+      .then(([{index, links}, content]) => ({
+        index,
+        links,
+        content,
+      }))
 
-      const render = () => {
+    const render = () => {
       // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page, adds event listeners, etc. If you are only dealing with basic DOM replacement, use the init function
 
       const siteBaseURL = new URL(BASE_URL);
@@ -129,85 +134,85 @@
 
       {{if $data.enableCodeBlockCopy | default $.Site.Data.config.enableCodeBlockCopy -}}
       addCopyButtons();
-      {{ end }}
+      {{end}}
 
       {{if $data.enableSPA | default $.Site.Data.config.enableSPA -}}
       addTitleToCodeBlocks();
-      {{ end }}
+      {{end}}
 
       {{if $data.enableCallouts | default $.Site.Data.config.enableCallouts -}}
       addCollapsibleCallouts();
-      {{ end }}
+      {{end}}
 
       {{if $data.enableLinkPreview | default $.Site.Data.config.enableLinkPreview}}
       initPopover(
-        {{strings.TrimRight "/" .Site.BaseURL }},
-        {{$data.enableContextualBacklinks | default $.Site.Data.config.enableContextualBacklinks}}
+        {{strings.TrimRight "/" .Site.BaseURL}},
+      {{$data.enableContextualBacklinks | default $.Site.Data.config.enableContextualBacklinks}}
       )
-      {{end}}
+    {{end}}
 
-      {{if $data.enableFooter | default $.Site.Data.config.enableFooter}}
-      const footer = document.getElementById("footer")
-      if (footer) {
-        const container = document.getElementById("graph-container")
-        // retry if the graph is not ready
-        if (!container) return requestAnimationFrame(render)
-        // clear the graph in case there is anything within it
-        container.textContent = ""
+    {{if $data.enableFooter | default $.Site.Data.config.enableFooter}}
+    const footer = document.getElementById("footer")
+    if (footer) {
+      const container = document.getElementById("graph-container")
+      // retry if the graph is not ready
+      if (!container) return requestAnimationFrame(render)
+      // clear the graph in case there is anything within it
+      container.textContent = ""
 
-        const drawGlobal = isHome && {{$.Site.Data.graphConfig.enableGlobalGraph}};
-        drawGraph(
-            {{strings.TrimRight "/" .Site.BaseURL}},
-            drawGlobal,
-            {{$.Site.Data.graphConfig.paths}},
-            drawGlobal ? {{$.Site.Data.graphConfig.globalGraph}} : {{$.Site.Data.graphConfig.localGraph}}
-          );
+      const drawGlobal = isHome && {{$.Site.Data.graphConfig.enableGlobalGraph}};
+    drawGraph(
+      {{strings.TrimRight "/" .Site.BaseURL}},
+      drawGlobal,
+      {{$.Site.Data.graphConfig.paths}},
+      drawGlobal ? {{$.Site.Data.graphConfig.globalGraph}} : {{$.Site.Data.graphConfig.localGraph}}
+    );
 
         }
-      {{end}}
+    {{end}}
 
-      {{if $data.enableMermaid | default $.Site.Data.config.enableMermaid}}
-        var els = document.getElementsByClassName("mermaid");
-        if (els.length > 0) {
-          import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
-            (obj) => {
-              // init forces mermaid to render mermaid markdown without waiting
-              // for DOMContentLoaded event
-              obj.default.init();
-            }
-          )
+    {{if $data.enableMermaid | default $.Site.Data.config.enableMermaid}}
+    var els = document.getElementsByClassName("mermaid");
+    if (els.length > 0) {
+      import('https://unpkg.com/mermaid@9/dist/mermaid.esm.min.mjs').then(
+        (obj) => {
+          // init forces mermaid to render mermaid markdown without waiting
+          // for DOMContentLoaded event
+          obj.default.init();
         }
-      {{end}}
-      
-      // analytics
-      function clickHandler(evt) {
-        const target = evt.target 
-        const classNames = target.className.split(" ")
-        const broken = classNames.includes("broken")
-        const internal = classNames.includes("internal-link")
-        plausible("Link Click", {
-          props: {
-            href: target.href,
-            broken,
-            internal,
-            graph: false,
-          }
-        })
+      )
+    }
+    {{end}}
+
+    // analytics
+    function clickHandler(evt) {
+      const target = evt.target
+      const classNames = target.className.split(" ")
+      const broken = classNames.includes("broken")
+      const internal = classNames.includes("internal-link")
+      // plausible("Link Click", {
+      //   props: {
+      //     href: target.href,
+      //     broken,
+      //     internal,
+      //     graph: false,
+      //   }
+      // })
+    }
+
+    const links = document.querySelectorAll("a")
+    for (link of links) {
+      if (link.className.includes("root-title")) {
+        link.addEventListener('click', clickHandler, {once: true})
       }
-
-      const links = document.querySelectorAll("a")
-      for (link of links) {
-        if (link.className.includes("root-title")) {
-          link.addEventListener('click', clickHandler, {once: true})
-        }
-      }
+    }
     }
 
     const init = (doc = document) => {
       // NOTE: everything within this callback will be executed for initial page navigation. This is a good place to put JavaScript that only replaces DOM nodes.
       {{if $data.enableCodeBlockCopy | default $.Site.Data.config.enableCodeBlockCopy -}}
       addCopyButtons();
-      {{ end }}
+      {{end}}
 
       {{if $data.enableCodeBlockTitle | default $.Site.Data.config.enableCodeBlockTitle -}}
       addTitleToCodeBlocks();
@@ -221,7 +226,7 @@
         macros: {
           '’': "'"
         },
-        throwOnError : false
+        throwOnError: false
       });
       {{end}}
     };
@@ -230,14 +235,14 @@
   {{ $router := resources.Get "js/router.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script type="module">
-    import { attachSPARouting } from "{{$router.Permalink}}"
+    import {attachSPARouting} from "{{$router.Permalink}}"
     attachSPARouting(init, render)
   </script>
   {{else}}
   <script>
     window.Million = {
       navigate: (url) => (window.location.href = url),
-      prefetch: () => {},
+      prefetch: () => { },
     }
 
     window.addEventListener("DOMContentLoaded", () => {
@@ -247,6 +252,6 @@
   </script>
   {{end}}
   {{ $trimmedURL := trim (index (split .Site.BaseURL "://") 1) "/" }}
-  <script defer data-domain="{{$trimmedURL}}" src="https://plausible.io/js/script.js"></script>
-  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+  <!-- <script defer data-domain="{{$trimmedURL}}" src="https://plausible.io/js/script.js"></script> -->
+  <!-- <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> -->
 </head>
