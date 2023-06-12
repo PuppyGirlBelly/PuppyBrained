@@ -1,31 +1,75 @@
 // Add your own CSS here!
 
+/* Color palette is from here: https://coolors.co/palette/ffcdb2-ffb4a2-e5989b-b5838d-6d6875 
+ * ~ Apricot:          #FFCDB2
+ * ~ Melon:            #FFB4A2
+ * ~ Pastel Pink:      #E5989B
+ * ~ English Lavender: #B5838D
+ * ~ Old Lavender:     #6D6875
+ */
+
 :root {
-  --light: #faf8f8;
-  --dark: #141021;
-  --secondary: #284b63;
-  --tertiary: #84a59d;
-  --visited: #afbfc9;
-  --primary: #f28482;
-  --gray: #4e4e4e;
-  --lightgray: #f0f0f0;
-  --outlinegray: #dadada;
+  --light: #FFCDB1;
+  --dark: #6D6875;
+  --secondary: #B5838D;
+  --tertiary: #E5989B;
+  --visited: #E5989B;
+  --primary: #FFB4A2;
+  --gray: #6D6875;
+  --lightgray: #FFB4A2;
+  --outlinegray: #B5838D;
   --million-progress-bar-color: var(--secondary);
-  --highlighted: #f5dfaf88;
+  --highlighted:  #6D687588
 }
 
 [saved-theme="dark"] {
-  --light: #1e1e21 !important;
-  --dark: #fbfffe !important;
-  --secondary: #6b879a !important;
-  --visited: #4a575e !important;
-  --tertiary: #84a59d !important;
-  --primary: #f58382 !important;
-  --gray: #d4d4d4 !important;
-  --lightgray: #292633 !important;
-  --outlinegray: #343434 !important;
-  --highlighted: #574010;
+  --light: #6D6875 !important;
+  --dark: #FFCDB1 !important;
+  --secondary: #E5989B !important;
+  --visited: #FFB4A2  !important;
+  --tertiary: #E5989B !important;
+  --primary: #B5838D !important;
+  --gray: #FFCDB1 !important;
+  --lightgray: #B5838D !important;
+  --outlinegray: #E5989B !important;
+  --highlighted: #FFCDB188;
 }
 
 
+/* CRT EFFECT 
+ * This effect was taken and adapted from this link;
+ * http://aleclownes.com/2017/02/01/crt-display.html */
+body::before {
+	content: " ";
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+	z-index: 3;
+	background-size: 100% 2px, 3px 100%;
+	pointer-events: none;
+}
+/* END CRT EFFECT */
 
+body {
+  background: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singlePage {
+  background: var(--light);
+  width: 85vw;
+  max-width: 80ch;
+  height: 85vh;
+  padding: 0 2.5vw;
+  border-top: solid 2.5vh var(--light);
+  border-bottom: solid 2.5vh var(--light);
+  overflow: auto;
+  scrollbbar-gutter: both-edge;
+  scrollbar-width: thin;
+}
