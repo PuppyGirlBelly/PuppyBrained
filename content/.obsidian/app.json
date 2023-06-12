@@ -8,5 +8,6 @@
     "en-US"
   ],
   "useTab": true,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "useMarkdownLinks": true
 }
