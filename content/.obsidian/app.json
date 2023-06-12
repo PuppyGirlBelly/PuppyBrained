@@ -1,0 +1,12 @@
+{
+  "legacyEditor": false,
+  "vimMode": true,
+  "newLinkFormat": "absolute",
+  "alwaysUpdateLinks": true,
+  "spellcheckLanguages": [
+    "en-GB",
+    "en-US"
+  ],
+  "useTab": true,
+  "showInlineTitle": false
+}

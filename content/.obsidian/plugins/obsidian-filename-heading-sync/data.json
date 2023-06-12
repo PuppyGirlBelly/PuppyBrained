@@ -1,0 +1,12 @@
+{
+  "userIllegalSymbols": [],
+  "ignoredFiles": {
+    "_index.md": null
+  },
+  "ignoreRegex": "",
+  "useFileOpenHook": true,
+  "useFileSaveHook": true,
+  "newHeadingStyle": "Prefix",
+  "replaceStyle": false,
+  "underlineString": "==="
+}
