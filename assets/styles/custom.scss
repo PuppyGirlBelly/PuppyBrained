@@ -3,6 +3,45 @@
   font-size: 100%;
 }
 
+:root {
+  --font-header: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+  --font-body: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  // --font-body: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  --bg-width: 1000px;
+  --bg-height: 560px;
+  @media (min-aspect-ratio: 500/280) {
+    --bg-height: auto;
+    @media (min-width: 1000px) {
+      --bg-width: 2000px;
+    }
+    @media (min-width: 2000px) {
+      --bg-width: 3000px;
+    }
+    @media (min-width: 3000px) {
+      --bg-width: 4000px;
+    }
+    @media (min-width: 4000px) {
+      --bg-width: 100%
+    }
+  }
+  @media (max-aspect-ratio: 500/280) {
+    --bg-width: auto;
+    @media (min-height: 560px) {
+      --bg-height: 1120px;
+    }
+    @media (min-height: 1120px) {
+      --bg-height: 1680px;
+    }
+    @media (min-height: 1680px) {
+      --bg-height: 2240px;
+    }
+    @media (min-height: 2240px) {
+      --bg-height: 100%;
+    }
+  }
+}
+
 // Color palette is from here: https://coolors.co/palette/ffcdb2-ffb4a2-e5989b-b5838d-6d6875
 // ~ Apricot:          #FFCDB2
 // ~ Melon:            #FFB4A2
@@ -21,7 +60,9 @@
   --outlinegray: #B5838D;
   --million-progress-bar-color: var(--secondary);
   --highlighted:  #6D687588;
-  --background: url("backgrounds/slide_rule.gif")
+  --background: url("backgrounds/light.gif");
+  --bg-pos-x: center;
+  --bg-pos-y: center;
 }
 
 [saved-theme="dark"] {
@@ -35,7 +76,9 @@
   --lightgray: #7F6F7B !important;
   --outlinegray: #E5989B !important;
   --highlighted: #FFCDB188;
-  --background: url("backgrounds/angel\'s_egg.gif")
+  --background: url("backgrounds/dark.gif");
+  --bg-pos-x: left;
+  --bg-pos-y: bottom;
 }
 
 /* CRT EFFECT
@@ -57,9 +100,13 @@ body::before {
 /* END CRT EFFECT */
 
 body {
-  background: var(--dark);
-	background: var(--background) no-repeat center center fixed;
-	background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--dark);
+  background-image: var(--background);
+  background-position-x: var(--bg-pos-x);
+  background-position-y: var(--bg-pos-y);
+  background-repeat: no-repeat;
+	background-size: var(--bg-width) var(--bg-height);
   image-rendering: pixelated;
   display: flex;
   justify-content: center;
