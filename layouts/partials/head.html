@@ -72,14 +72,17 @@
   resources.Minify }}
   <script src="{{$s.Permalink}}"></script>
   {{end}}
-  {{partial "katex.html" .}}
 
   {{partial "mermaid.html" .}}
 
-  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
-  <!-- <script src="../../node_modules/@floating-ui/core/dist/floating-ui.core.mjs"></script> -->
-  <!-- <script src="../../node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs"></script> -->
+  {{ $floatingUiCoreMain := resources.Get "js/floating-ui-core/floating-ui.core.umd.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{ $floatingUiCoreMain.Permalink }}"></script>
+  {{ $floatingUiCoreMod := resources.Get "js/floating-ui-core/floating-ui.core.esm.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{ $floatingUiCoreMod.Permalink }}"></script>
+  {{ $floatingUiDomMain := resources.Get "js/floating-ui-dom/floating-ui.dom.umd.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{ $floatingUiDomMain.Permalink }}"></script>
+  {{ $floatingUiDomMod := resources.Get "js/floating-ui-dom/floating-ui.dom.esm.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{ $floatingUiDomMod.Permalink }}"></script>
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script defer src="{{$popover.Permalink}}"></script>
@@ -192,14 +195,6 @@
       const classNames = target.className.split(" ")
       const broken = classNames.includes("broken")
       const internal = classNames.includes("internal-link")
-      plausible("Link Click", {
-        props: {
-          href: target.href,
-          broken,
-          internal,
-          graph: false,
-        }
-      })
     }
 
     const links = document.querySelectorAll("a")
@@ -254,6 +249,4 @@
   </script>
   {{end}}
   {{ $trimmedURL := trim (index (split .Site.BaseURL "://") 1) "/" }}
-  <!-- <script defer data-domain="{{$trimmedURL}}" src="https://plausible.io/js/script.js"></script> -->
-  <!-- <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> -->
 </head>

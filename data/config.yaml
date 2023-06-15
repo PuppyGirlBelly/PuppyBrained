@@ -1,8 +1,7 @@
 name: Puppy
 enableToc: true
-openToc: false
+openToc: true
 enableLinkPreview: true
-enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: true
@@ -20,14 +19,14 @@ search:
 description:
   Puppy's second brain and various thoughts
 page_title:
-  "🐾 Puppy Brained 🐾"
+  "🐾 Puppy Second Brained 🐾"
 links:
   - link_name: GitHub
     link: https://github.com/PuppyGirlBelly
 favicon: |
-  <link rel="apple-touch-icon" sizes="180x180" href="icon/favicon_180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon_32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon_16.png">
-  <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#6D6875">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/favicon_180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon_16.png">
+  <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#6D6875">
   <meta name="msapplication-TileColor" content="#6D6875">
   <meta name="theme-color" content="#FFCDB1">

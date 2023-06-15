@@ -1,12 +1,6 @@
 {
   "comments": {
-    "dependencies": {
-      "@floating-ui/core": "project",
-      "@floating-ui/dom": "project",
-      "d3": "project",
-      "flexsearch": "project",
-      "million": "project"
-    },
+    "dependencies": {},
     "devDependencies": {}
   },
   "dependencies": {
@@ -16,7 +10,6 @@
     "flexsearch": "^0.7.21",
     "million": "^1.11.5"
   },
-  "devDependencies": {},
   "name": "PuppyBrained",
   "version": "0.1.0"
 }
