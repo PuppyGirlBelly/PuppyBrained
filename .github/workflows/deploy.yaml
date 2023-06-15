@@ -49,6 +49,12 @@ jobs:
             
       - name: Copy Floating Ui DOM
         run: cp --recursive --force node_modules/@floating-ui/dom/dist/* assets/js/floating-ui-dom/.
+        
+      - name: Create flexsearch folder
+        run: mkdir -p assets/js/flexsearch
+            
+      - name: Copy Floating Ui DOM
+        run: cp --recursive --force node_modules/flexsearch/dist/* assets/js/flexsearch/.
 
       - name: Build
         run: hugo --minify
