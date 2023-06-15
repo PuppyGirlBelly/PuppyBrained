@@ -25,13 +25,26 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: tecolicom/actions-install-node-modules@91b30a16887b3cbb6b9ff0f2db1b871e9394e4a5
         uses: tecolicom/actions-install-node-modules@v1.2
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-npmmod-${{ hashFiles('**/npm.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-npmmod-
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.96.0'
           extended: true
-
+          
+      - name: Cache Hugo Files
+        uses: actions/cache@v2
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+          
       - name: Build
         run: hugo --minify
 
