@@ -51,9 +51,6 @@ enableGitInfo = true
         source = "i18n"
         target = "i18n"
     [[module.mounts]]
-        source = "assets/"
-        target = "static/js/floating-ui-core"
-    [[module.mounts]]
         source = "node_modules/@floating-ui/core/dist/"
         target = "static/js/floating-ui-core"
     [[module.mounts]]
