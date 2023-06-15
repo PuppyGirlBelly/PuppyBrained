@@ -72,14 +72,12 @@
   resources.Minify }}
   <script src="{{$s.Permalink}}"></script>
   {{end}}
-  {{partial "katex.html" .}}
 
   {{partial "mermaid.html" .}}
 
-  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/core@1.2.1"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.2.1"></script>
-  <!-- <script src="../../node_modules/@floating-ui/core/dist/floating-ui.core.mjs"></script> -->
-  <!-- <script src="../../node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs"></script> -->
+  <script src="js/floating-ui-core/floating-ui.core.umd.min.js"></script>
+  <script src="js/floating-ui-dom/floating-ui.dom.umd.min.js"></script>
+  <script src=""></script>
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script defer src="{{$popover.Permalink}}"></script>
@@ -192,14 +190,6 @@
       const classNames = target.className.split(" ")
       const broken = classNames.includes("broken")
       const internal = classNames.includes("internal-link")
-      plausible("Link Click", {
-        props: {
-          href: target.href,
-          broken,
-          internal,
-          graph: false,
-        }
-      })
     }
 
     const links = document.querySelectorAll("a")

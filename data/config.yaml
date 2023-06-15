@@ -1,8 +1,7 @@
 name: Puppy
 enableToc: true
-openToc: false
+openToc: true
 enableLinkPreview: true
-enableLatex: true
 enableCodeBlockTitle: true
 enableCodeBlockCopy: true
 enableCallouts: true
@@ -20,7 +19,7 @@ search:
 description:
   Puppy's second brain and various thoughts
 page_title:
-  "🐾 Puppy Brained 🐾"
+  "🐾 Puppy Second Brained 🐾"
 links:
   - link_name: GitHub
     link: https://github.com/PuppyGirlBelly

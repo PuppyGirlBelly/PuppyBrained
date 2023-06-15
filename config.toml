@@ -31,3 +31,19 @@ enableGitInfo = true
         publishDate = ["publishDate", "date"]
     [markup.goldmark.renderer]
         unsafe = true
+[module]
+    [[module.mounts]]
+        source = "node_modules/@floating-ui/core/dist/"
+        target = "static/js/floating-ui-core"
+    [[module.mounts]]
+        source = "node_modules/@floating-ui/dom/dist/"
+        target = "static/js/floating-ui-dom"
+    [[module.mounts]]
+        source = "node_modules/flexsearch/dist/"
+        target = "static/js/flexsearch"
+    [[module.mounts]]
+        source = "node_modules/million/dist/"
+        target = "static/js/million"
+    [[module.mounts]]
+        source = "node_modules/d3/dist/"
+        target = "static/js/d3"
