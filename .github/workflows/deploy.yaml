@@ -36,7 +36,7 @@ jobs:
           extended: true
           
       - name: PreBuild
-        run: ls -l
+        run: ls -alh node_modules
         
       - name: Copy Floating Ui Core
         uses: MadaraUchiha/copy-action@0.0.1
