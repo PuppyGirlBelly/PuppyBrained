@@ -39,16 +39,16 @@ jobs:
         run: ls -alh node_modules
         
       - name: Create Floating Ui Core Folder
-        run: mkdir -p js/floating-ui-core
+        run: mkdir -p assets/js/floating-ui-core
     
       - name: Copy Floating Ui Core
-        run: cp --recursive --force node_modules/@floating-ui/core/dist/* js/floating-ui-core/.
+        run: cp --recursive --force node_modules/@floating-ui/core/dist/* assets/js/floating-ui-core/.
         
       - name: Create Floating Ui DOM Folder
-        run: mkdir -p js/floating-ui-dom
+        run: mkdir -p assets/js/floating-ui-dom
             
       - name: Copy Floating Ui DOM
-        run: cp --recursive --force node_modules/@floating-ui/dom/dist/* js/floating-ui-dom/.
+        run: cp --recursive --force node_modules/@floating-ui/dom/dist/* assets/js/floating-ui-dom/.
 
       - name: Build
         run: hugo --minify
