@@ -37,7 +37,18 @@ jobs:
           
       - name: PreBuild
         run: ls -l
-          
+        
+      - name: Copy Floating Ui Core
+        uses: MadaraUchiha/copy-action@0.0.1
+        with:
+          source: node_modules/@floating-ui/core/dist
+          target: js/floating-ui-core/
+        
+      - name: Copy Floating Ui DOM
+        uses: MadaraUchiha/copy-action@0.0.1
+        with:
+          source: node_modules/@floating-ui/dom/dist
+          target: js/floating-ui-dom/
       - name: Build
         run: hugo --minify
 
