@@ -50,6 +50,9 @@ jobs:
       - name: Copy Floating Ui DOM
         run: cp --recursive --force node_modules/@floating-ui/dom/dist/* js/floating-ui-dom/.
 
+      - name: Build
+        run: hugo --minify
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
