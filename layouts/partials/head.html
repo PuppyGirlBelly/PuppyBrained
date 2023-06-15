@@ -75,10 +75,10 @@
 
   {{partial "mermaid.html" .}}
 
-  {{ $floatingUiCore:= resources.Get "/js/floating-ui-core/floating-ui.core.umd.min.js" | resources.Fingerprint "md5" | resources.Minify }}
-  <script src="{{$floatingUiCore.Permalink}}"></script>
-  {{ $floatingUiDom:= resources.Get "/js/floating-ui-dom/floating-ui.dom.umd.min.js" | resources.Fingerprint "md5" | resources.Minify }}
-  <script src="{{$floatingUiDom.Permalink}}"></script>
+  {{ $floatingUiCore := resources.Get "js/floating-ui-core/floating-ui.core.umd.min.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{ $floatingUiCore.Permalink }}"></script>
+  {{ $floatingUiDom := resources.Get "js/floating-ui-dom/floating-ui.dom.umd.min.js" | resources.Fingerprint "md5" | resources.Minify }}
+  <script src="{{ $floatingUiDom.Permalink }}"></script>
   {{ $popover := resources.Get "js/popover.js" | resources.Fingerprint "md5" |
   resources.Minify }}
   <script defer src="{{$popover.Permalink}}"></script>
