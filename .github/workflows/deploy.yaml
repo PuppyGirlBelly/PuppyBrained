@@ -20,6 +20,11 @@ jobs:
           input: content
           output: assets/indices
           root: .
+          
+      - name: install node modules
+        # You may pin to the exact commit or the version.
+        # uses: tecolicom/actions-install-node-modules@91b30a16887b3cbb6b9ff0f2db1b871e9394e4a5
+        uses: tecolicom/actions-install-node-modules@v1.2
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
