@@ -53,8 +53,14 @@ jobs:
       - name: Create flexsearch folder
         run: mkdir -p assets/js/flexsearch
             
-      - name: Copy Floating Ui DOM
+      - name: Copy flexsearch
         run: cp --recursive --force node_modules/flexsearch/dist/* assets/js/flexsearch/.
+
+      - name: Create d3 folder
+        run: mkdir -p assets/js/d3
+            
+      - name: Copy d3
+        run: cp --recursive --force node_modules/d3/dist/* assets/js/d3/.
 
       - name: Build
         run: hugo --minify
