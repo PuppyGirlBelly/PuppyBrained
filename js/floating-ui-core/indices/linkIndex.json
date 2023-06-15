@@ -1,0 +1,48 @@
+{
+  "index": {
+    "links": {
+      "/": [
+        {
+          "source": "/",
+          "target": "/posts/2ndPage",
+          "text": "posts/2ndPage.md"
+        }
+      ],
+      "/posts/2ndPage": [
+        {
+          "source": "/posts/2ndPage",
+          "target": "/_index",
+          "text": "_index.md"
+        }
+      ]
+    },
+    "backlinks": {
+      "/_index": [
+        {
+          "source": "/posts/2ndPage",
+          "target": "/_index",
+          "text": "_index.md"
+        }
+      ],
+      "/posts/2ndPage": [
+        {
+          "source": "/",
+          "target": "/posts/2ndPage",
+          "text": "posts/2ndPage.md"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "source": "/",
+      "target": "/posts/2ndPage",
+      "text": "posts/2ndPage.md"
+    },
+    {
+      "source": "/posts/2ndPage",
+      "target": "/_index",
+      "text": "_index.md"
+    }
+  ]
+}
