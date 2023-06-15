@@ -61,8 +61,8 @@
   --million-progress-bar-color: var(--secondary);
   --highlighted:  #6D687588;
   --background: url("backgrounds/light.gif");
-  --bg-pos-x: center;
-  --bg-pos-y: center;
+  --bg-pos-x: right;
+  --bg-pos-y: top;
 }
 
 [saved-theme="dark"] {
@@ -135,7 +135,7 @@ body {
   padding: 0ch 1ch 0.25em 2ch;
   width: 85vw;
   max-width: 80ch;
-	content: "Puppy_Brained" " " "▤_▣_▩";
+	content: "Puppy Brained" " " "▤ ▣ ▩";
 	color: var(--light);
   font-weight: bold;
   text-align-last: justify;

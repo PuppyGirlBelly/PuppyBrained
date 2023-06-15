@@ -1,17 +1,17 @@
 name: Puppy
 enableToc: true
 openToc: false
-enableLinkPreview: false
-enableLatex: false
+enableLinkPreview: true
+enableLatex: true
 enableCodeBlockTitle: true
-enableCodeBlockCopy: false
+enableCodeBlockCopy: true
 enableCallouts: true
-enableSPA: false
+enableSPA: true
 enableFooter: true
-enableContextualBacklinks: false
-enableRecentNotes: false
+enableContextualBacklinks: true
+enableRecentNotes: true
 enableGitHubEdit: false
-enableMermaid: false
+enableMermaid: true
 GitHubLink: https://github.com/PuppyGirlBelly/PuppyBrained/tree/hugo/content
 search:
   enableSemanticSearch: false

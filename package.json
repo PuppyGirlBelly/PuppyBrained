@@ -1,0 +1,12 @@
+{
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "@floating-ui/core": "^1.2.1",
+    "@floating-ui/dom": "^1.2.1"
+  },
+  "name": "PuppyBrained",
+  "version": "0.1.0"
+}

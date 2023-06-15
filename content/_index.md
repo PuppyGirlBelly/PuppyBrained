@@ -8,6 +8,8 @@ enableToc: false
 
 # Home
 
+[[posts/2ndPage.md]]
+
 # H1 Heading 8-)
 ## H2 Heading
 ### H3 Heading
