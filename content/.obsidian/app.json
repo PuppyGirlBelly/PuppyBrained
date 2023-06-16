@@ -9,5 +9,7 @@
   ],
   "useTab": true,
   "showInlineTitle": false,
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./"
 }
