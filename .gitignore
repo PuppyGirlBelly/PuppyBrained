@@ -6,3 +6,8 @@ content/.obsidian/workspace.json
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json
 linkmap
+node_modules/
+assets/js/floating-ui-core
+assets/js/floating-ui-dom
+assets/js/flexsearch
+assets/js/d3

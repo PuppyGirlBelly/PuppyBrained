@@ -20,12 +20,47 @@ jobs:
           input: content
           output: assets/indices
           root: .
-
+     
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.5.2
+        with: 
+          node-version: 20.x
+            
+      - name: install NPM Deps
+        run: npm i
+        
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.96.0'
           extended: true
+          
+      - name: PreBuild
+        run: ls -alh node_modules
+        
+      - name: Create Floating Ui Core Folder
+        run: mkdir -p assets/js/floating-ui-core
+    
+      - name: Copy Floating Ui Core
+        run: cp --recursive --force node_modules/@floating-ui/core/dist/* assets/js/floating-ui-core/.
+        
+      - name: Create Floating Ui DOM Folder
+        run: mkdir -p assets/js/floating-ui-dom
+            
+      - name: Copy Floating Ui DOM
+        run: cp --recursive --force node_modules/@floating-ui/dom/dist/* assets/js/floating-ui-dom/.
+        
+      - name: Create flexsearch folder
+        run: mkdir -p assets/js/flexsearch
+            
+      - name: Copy flexsearch
+        run: cp --recursive --force node_modules/flexsearch/dist/* assets/js/flexsearch/.
+
+      - name: Create d3 folder
+        run: mkdir -p assets/js/d3
+            
+      - name: Copy d3
+        run: cp --recursive --force node_modules/d3/dist/* assets/js/d3/.
 
       - name: Build
         run: hugo --minify
