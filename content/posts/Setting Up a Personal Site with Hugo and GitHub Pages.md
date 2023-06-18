@@ -2,10 +2,10 @@
 title: Setting Up a Personal Site with Hugo and GitHub Pages
 tags: [archive, hugo, github, website, instructions]
 created: Wednesday, June 2nd 2021, 10:52:39 am
-modified: Sunday, June 18th 2023, 5:38:23 pm
+modified: Sunday, June 18th 2023, 5:47:53 pm
 ---
 
-{{ youtube -LgYzva-xq8 }}
+{{< youtube -LgYzva-xq8 >}}
 
 Alright, so a friend was asking if I could make a site for them after crafting this one and showing it off. So instead of doing that, I'll instead write an absolute beginner's step-by-step tutorial on how to install Hugo and get your site uploaded to GitHub pages!
 
