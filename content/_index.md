@@ -1,10 +1,14 @@
 ---
-title: _index
+title: Home
 created: Saturday, June 10th 2023, 11:05:56 am
-modified: Sunday, June 18th 2023, 5:38:44 pm
+modified: Sunday, June 18th 2023, 5:54:20 pm
 tags: []
 enableToc: false
+aliases:
+  - Home
 ---
+
+## Home
 
 Hello, this is Puppy! This is a website I created to help share any information that might help other folks. Here's some stuff I've written that might be interesting;
 
