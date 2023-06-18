@@ -2,12 +2,13 @@
 title: Injection Checklist and Steps
 tags: [instructions, transgender, injections, medical]
 created: Sunday, June 18th 2023, 5:01:08 pm
-modified: Sunday, June 18th 2023, 5:01:35 pm
+modified: Sunday, June 18th 2023, 5:38:09 pm
 ---
-# Injection Checklist and Steps
 
 ## Checklist
-### Items You'll Need
+
+You'll need the following items;
+
 1. [ ] Your vial/bottle/ampoule of medication
 2. [ ] A syringe
 3. [ ] A draw needle (around 18g. Optional, but highly recommended)
@@ -17,7 +18,7 @@ modified: Sunday, June 18th 2023, 5:01:35 pm
 7. [ ] A band-aid
 8. [ ] Any items needed for soothing (e.g. phone for music, water, and/or treats)
 
-### Steps
+## Steps
 1. Sit yourself in a calm, quiet, environment. A bedroom or living room can be ideal. Set up anything to help cause a calm atmosphere; like proper lighting, music, and moving pets out of the room.
 2. Grab your alcohol wipe/rubbing alcohol, and disinfect and sanitize the injection site (I use a particularly fleshy part on my lap, though if a second party is injecting then they may use your glutes instead). Let it dry for at least 10 seconds before injecting.
 3. Prepare your needle for drawing your medication. Unpack a syringe and needle (a draw needle, if using; or an injection needle if otherwise). Grab your vial, and draw an amount of air equivalent to the amount of your medication. (e.g. if you inject 5ml, draw 5ml worth of air)

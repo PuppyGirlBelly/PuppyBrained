@@ -2,10 +2,8 @@
 title: Setting Up a Personal Site with Hugo and GitHub Pages
 tags: [archive, hugo, github, website, instructions]
 created: Wednesday, June 2nd 2021, 10:52:39 am
-modified: Sunday, June 18th 2023, 5:01:44 pm
+modified: Sunday, June 18th 2023, 5:38:23 pm
 ---
-
-# Setting Up a Personal Site with Hugo and GitHub Pages
 
 {{ youtube -LgYzva-xq8 }}
 

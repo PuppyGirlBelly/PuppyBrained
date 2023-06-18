@@ -2,10 +2,8 @@
 title: "A Beginner's Guide to Makeup for Trans Women"
 tags: [instructions, transgender, makeup]
 created: Wednesday, April 6th 2022, 12:30:32 am
-modified: Sunday, June 18th 2023, 5:03:15 pm
+modified: Sunday, June 18th 2023, 5:38:30 pm
 ---
-
-# A Beginner's Guide to Makeup for Trans Women
 
 > This blog post is an adaptation and rewrite of some advice I wrote for some trans girls on a discord server. But I figure that this info would be super useful for other folks; so I'm sharing this here to make it easier to access and share! It is written for trans women, but I feel the tips are applicable to anybody who wants to explore makeup.
 > 
