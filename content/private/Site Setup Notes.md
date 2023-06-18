@@ -4,7 +4,7 @@ created: Saturday, June 10th 2023, 11:05:56 am
 modified: Monday, June 12th 2023, 2:22:55 pm
 ---
 
-# Site setup notes
+# Site Setup Notes
 
 Took a look at settings to reduce the amount of tracking and additional requests.
 

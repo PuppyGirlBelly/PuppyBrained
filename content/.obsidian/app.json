@@ -4,10 +4,12 @@
   "newLinkFormat": "absolute",
   "alwaysUpdateLinks": true,
   "spellcheckLanguages": [
-    "en-GB",
-    "en-US"
+    "en-US",
+    "en-CA"
   ],
   "useTab": true,
   "showInlineTitle": false,
-  "useMarkdownLinks": true
+  "useMarkdownLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./"
 }
