@@ -240,7 +240,8 @@
   "displayChanged": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
-    ""
+    "templates",
+    "_index"
   ],
   "linterLocale": "en-ca",
   "logLevel": 4,

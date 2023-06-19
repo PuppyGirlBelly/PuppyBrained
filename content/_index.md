@@ -1,12 +1,12 @@
 ---
-title: _index
+title: Home Page
 created: Saturday, June 10th 2023, 11:05:56 am
 modified: Sunday, June 18th 2023, 9:37:46 pm
 tags: []
 enableToc: false
 ---
 
-## Home Page
+# Home Page
 
 Hello, this is Puppy! This is a website I created to help share any information that might help other folks. Here's some stuff I've written that might be interesting;
 
