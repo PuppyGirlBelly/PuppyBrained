@@ -5,5 +5,10 @@
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true,
   "alwaysUpdateLinks": true,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "spellcheck": false,
+  "spellcheckDictionary": [
+    "Gravis",
+    "Celeron"
+  ]
 }

@@ -5,8 +5,10 @@
   "obsidian-dynamic-highlights",
   "obsidian-local-images-plus",
   "cm-typewriter-scroll-obsidian",
-  "obsidian-git",
   "better-word-count",
   "obsidian-style-settings",
-  "obsidian-filename-heading-sync"
+  "obsidian-filename-heading-sync",
+  "obsidian-languagetool-plugin",
+  "obsidian-vimrc-support",
+  "obsidian-git"
 ]
