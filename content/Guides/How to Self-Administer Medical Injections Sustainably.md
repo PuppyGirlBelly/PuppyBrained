@@ -46,4 +46,4 @@ Then, almost using the weight of the needle itself, just softly press it in. The
 
 Your body will learn how to react to needles based on how it feels during needles. Getting upset, anxious, and having a fast heartrate will mean your body will repeat those things in the future. Meanwhile, training your body to recognize a needle as a calming event makes it much easier to do in the future. If you have a slow heartbeat, feel relaxed, and learn to enjoy the process; then you will do your needles with ease.
 
-## [Injection Checklist and Steps](Injection%20Checklist%20and%20Steps.md)
+## [Injection Checklist and Steps](Guides/Injection%20Checklist%20and%20Steps.md)

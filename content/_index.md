@@ -12,6 +12,6 @@ aliases:
 
 Hello, this is Puppy! This is a website I created to help share any information that might help other folks. Here's some stuff I've written that might be interesting;
 
-- [Setting Up a Personal Site with Hugo and GitHub Pages](Setting%20Up%20a%20Personal%20Site%20with%20Hugo%20and%20GitHub%20Pages.md)
-- [A Beginner's Guide to Makeup for Trans Women](A%20Beginner's%20Guide%20to%20Makeup%20for%20Trans%20Women.md)
-- [How to Self-Administer Medical Injections Sustainably](How%20to%20Self-Administer%20Medical%20Injections%20Sustainably.md)
+- [Setting Up a Personal Site with Hugo and GitHub Pages](Guides/Setting%20Up%20a%20Personal%20Site%20with%20Hugo%20and%20GitHub%20Pages.md)
+- [A Beginner's Guide to Makeup for Trans Women](Guides/A%20Beginner's%20Guide%20to%20Makeup%20for%20Trans%20Women.md)
+- [How to Self-Administer Medical Injections Sustainably](Guides/How%20to%20Self-Administer%20Medical%20Injections%20Sustainably.md)
