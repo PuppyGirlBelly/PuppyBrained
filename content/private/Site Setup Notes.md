@@ -1,10 +1,10 @@
 ---
 title: Site Setup Notes
 created: Saturday, June 10th 2023, 11:05:56 am
-modified: Monday, June 12th 2023, 2:22:55 pm
+modified: Sunday, June 18th 2023, 10:15:36 pm
 ---
 
-# Site Setup Notes
+## Site Setup Notes
 
 Took a look at settings to reduce the amount of tracking and additional requests.
 
@@ -40,6 +40,6 @@ Took a look at settings to reduce the amount of tracking and additional requests
 `251`  <!-- <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script> -->
 ```
 
-Went through the process of identifying all external requests on the website, and then imported them and bundled into the website. Had the added benefit 
+Went through the process of identifying all external requests on the website, and then imported them and bundled into the website. Had the added benefit of allowing me to update packages if they are out of date or unsafe.
 
 TODO: Look at other digital gardens [on jzhao's website](https://quartz.jzhao.xyz/notes/showcase/)
