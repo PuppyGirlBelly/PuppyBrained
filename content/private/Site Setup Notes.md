@@ -1,10 +1,10 @@
 ---
 title: Site Setup Notes
 created: Saturday, June 10th 2023, 11:05:56 am
-modified: Sunday, June 18th 2023, 10:15:36 pm
+modified: Tuesday, June 20th 2023, 11:51:14 am
 ---
 
-## Site Setup Notes
+# Site Setup Notes
 
 Took a look at settings to reduce the amount of tracking and additional requests.
 

@@ -1,5 +1,11 @@
 {
   "accentColor": "#6db478",
-  "cssTheme": "Typewriter",
-  "theme": "moonstone"
+  "cssTheme": "Minimal",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "iAWriterFontsBase64"
+  ],
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "monospaceFontFamily": ""
 }

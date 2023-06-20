@@ -46,4 +46,26 @@ Because that is what I did. I took an old Lenovo S10-3 destined for the trash, a
 
 ## Enter, My Netbook
 
-My personal device is a Lenovo S10-3 that was sent to the
+My personal device is a Lenovo S10-3 that was sent to the e-waste pile at work. At the opportunity for a new device with limitations that I wasn't familiar with, I decided to try and see if I could turn it into a usable device.
+
+Knowing that Linux was often used to revive old computers that couldn't run contemporary operating systems and programs; I was curious about how far it could go. So an underpowered laptop that is 15 years out of date is a perfect candidate.
+
+That initial experiment made me discover a few things;
+1) Small Debian based distros can still be painfully slow (e.g. Xubuntu)
+2) I love Puppy Linux conceptually; I hate using Puppy Linux.
+	- It's GUI is stuck in the mid-2000s, which would be acceptable if it wasn't stuck in the 'Pre-Ubuntu' era of GUI design.
+	- It doesn't follow typical \*nix file conventions and installing software from source or outside it's typical package manager causes major headaches.
+3) Gentoo is terrible for a low-end netbook; it may work if you cross-compile everything from a powerful computer. But I gave up after two hours of compiling before installation was completed.
+3) [Void Linux](private/Void%20Linux.md) is great, and I would consider using it for a daily driver.
+	- The XBPS package manger is actually pretty cool, and pretty easy to use.
+	- The way it handles services (i.e. linking them)
+	- Very minimal, which let me build up what I needed piece-by-piece
+
+> [!note] Todo: Experiment with antiX
+> I haven't tried it yet, but I heard reccommendations for AntiX. 
+>
+> [antiX](https://en.wikipedia.org/wiki/AntiX) is a linux distro that was originally designed for live booting via USB drive. However, it seems to have very low resource utilization and seems suitable for netbooks. Also seems like a more "install and go" distro than Void Linux.
+
+I put that notebook away, after using it as effectively a digital typewriter with git capabilities for an old creative writing project. But recently I picked it back up to use for this website. So I wiped it from scratch and set it up.
+
+1) Install Void Linux
