@@ -1,15 +1,12 @@
 [
   "obsidian-linter",
   "obsidian-auto-link-title",
-  "obsidian-reveal-active-file",
-  "obsidian-dynamic-highlights",
   "obsidian-local-images-plus",
   "cm-typewriter-scroll-obsidian",
-  "better-word-count",
-  "obsidian-style-settings",
   "obsidian-filename-heading-sync",
-  "obsidian-languagetool-plugin",
   "obsidian-vimrc-support",
-  "obsidian-git",
-  "obsidian-minimal-settings"
+  "obsidian-minimal-settings",
+  "obsidian-emoji-toolbar",
+  "emoji-shortcodes",
+  "obsidian-git"
 ]

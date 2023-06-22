@@ -3,7 +3,8 @@
   "cssTheme": "Minimal",
   "theme": "system",
   "enabledCssSnippets": [
-    "iAWriterFontsBase64"
+    "iAWriterFontsBase64",
+    "NotoColorEmoji"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",
