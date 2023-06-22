@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/Random Ideas.md",
+                "file": "private/Netbook Notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "private/Random Ideas.md",
+            "file": "private/Netbook Notes.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "private/Random Ideas.md",
+            "file": "private/Netbook Notes.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "private/Random Ideas.md"
+            "file": "private/Netbook Notes.md"
           }
         }
       }
@@ -130,10 +130,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd68b5ed83b61758",
+  "active": "a25b0868dbb546c7",
   "lastOpenFiles": [
-    "private/Site Setup Notes.md",
     "private/Random Ideas.md",
+    "private/Site Setup Notes.md",
     "Untitled.md",
     "posts/2ndPage.md",
     "posts",

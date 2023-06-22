@@ -1,7 +1,7 @@
 ---
 title: Todos
 created: Tuesday, June 20th 2023, 11:37:29 am
-modified: Tuesday, June 20th 2023, 4:52:45 pm
+modified: Thursday, June 22nd 2023, 12:03:03 am
 aliases:
   - Todos
 ---
@@ -12,6 +12,9 @@ aliases:
 - TODO: Setup `st` terminal again
 - TODO: use [GitHub - starship/starship: ☄🌌️ The minimal, blazing-fast, and infinitely customizable prompt for any shell!](https://github.com/starship/starship) instead of oh-my-zsh
 - TODO: Get `exa` [GitHub - ogham/exa: A modern replacement for 'ls'.](https://github.com/ogham/exa)
+- Add part about skipping GRUB timeout
+- Add part about usb auto mounting
+- Do audio setup
 
 > [!note] bash-sensible
 > Seems like this document is turning into a handful of scripts that are turning into bash-sensible
