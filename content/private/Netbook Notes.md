@@ -1,7 +1,6 @@
 ---
 title: Netbook Notes
 created: Tuesday, June 20th 2023, 11:37:29 am
-<<<<<<< Updated upstream
 modified: Thursday, June 22nd 2023, 12:03:03 am
 aliases:
   - Todos
@@ -21,16 +20,8 @@ aliases:
 > Seems like this document is turning into a handful of scripts that are turning into bash-sensible
 > [GitHub - mrzool/bash-sensible: An attempt at saner Bash defaults](https://github.com/mrzool/bash-sensible)
 
-## Pre-Setup
-=======
-modified: Wednesday, June 21st 2023, 12:13:41 pm
-aliases:
-  - Todos
----
 # Netbook Notes
 ## Pre-Install
->>>>>>> Stashed changes
-
 Set the BIOS clock to UTC time
 
 ## Setup
