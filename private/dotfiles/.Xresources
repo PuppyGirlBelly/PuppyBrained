@@ -1,0 +1,23 @@
+*faceName: Cozette:pixelsize=12:antialias=false
+
+echo "*.foreground:   #D8DEE9" >> ~/.Xresources
+echo "*.background:   #2E3440" >> ~/.Xresources
+echo "*.cursorColor:  #D8DEE9" >> ~/.Xresources
+echo "*fading: 35" >> ~/.Xresources
+echo "*fadeColor: #4C566A" >> ~/.Xresources
+echo "*.color0: #3B4252" >> ~/.Xresources
+echo "*.color1: #BF616A" >> ~/.Xresources
+echo "*.color2: #A3BE8C" >> ~/.Xresources
+echo "*.color3: #EBCB8B" >> ~/.Xresources
+echo "*.color4: #81A1C1" >> ~/.Xresources
+echo "*.color5: #B48EAD" >> ~/.Xresources
+echo "*.color6: #88C0D0" >> ~/.Xresources
+echo "*.color7: #E5E9F0" >> ~/.Xresources
+echo "*.color8: #4C566A" >> ~/.Xresources
+echo "*.color9: #BF616A" >> ~/.Xresources
+echo "*.color10: #A3BE8C" >> ~/.Xresources
+echo "*.color11: #EBCB8B" >> ~/.Xresources
+echo "*.color12: #81A1C1" >> ~/.Xresources
+echo "*.color13: #B48EAD" >> ~/.Xresources
+echo "*.color14: #8FBCBB" >> ~/.Xresources
+echo "*.color15: #ECEFF4" >> ~/.Xresources

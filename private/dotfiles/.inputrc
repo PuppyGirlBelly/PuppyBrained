@@ -1,0 +1,32 @@
+$include /etc/inputrc
+
+# Case insensitive completion
+set completion-ignore-case on
+
+# Treat hypens and underscores as equivalent in completion
+set completion-map-case on
+
+# Ambiguous completion menu
+set show-all-if-ambiguous on
+
+# Completes first option before showing menu
+set  menu-complete-display-prefix on
+
+# Highlight common matching prefix
+set colored-completion-prefix on
+
+# Use <tab> and <shift+tab> for navigating completion menu
+TAB:menu-complete
+"\e[Z": menu-complete-backward
+
+# Key bindings, up/down arrow searches through history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\eOA": history-search-backward
+"\eOB": history-search-forward
+
+# Disable bell, hide control characters, append `/` to symlinked directories
+set bell-style none
+set echo-control-characters off
+set mark-symlinked-directories on
+
