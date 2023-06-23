@@ -71,7 +71,5 @@ if ! shopt -oq posix; then
 fi
 
 # Source other configurations
-source $HOME/.profile
 source $HOME/.aliases
 source $HOME/.exports
-source $HOME/.inputrc
