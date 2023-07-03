@@ -9,7 +9,7 @@ modified: Tuesday, June 20th 2023, 1:16:45 pm
 
 My Netbook is a Lenovo S10-3 running Void Linux
 
-![My netbook showing neofetch, output below](private/test.png)
+![My netbook showing neofetch, output below](private/Netbook/test.png)
 
 The neofetch output;
 > - **OS**: Void Linux x86_64

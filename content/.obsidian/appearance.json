@@ -1,10 +1,11 @@
 {
   "accentColor": "#6db478",
   "cssTheme": "Minimal",
-  "theme": "system",
+  "theme": "moonstone",
   "enabledCssSnippets": [
-    "iAWriterFontsBase64",
-    "NotoColorEmoji"
+    "UrlPreview",
+    "NotoColorEmoji",
+    "iAWriterFontsBase64"
   ],
   "interfaceFontFamily": "",
   "textFontFamily": "",

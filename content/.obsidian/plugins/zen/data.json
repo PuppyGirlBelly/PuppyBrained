@@ -1,0 +1,25 @@
+{
+  "enabled": false,
+  "preferences": {
+    "ribbon": true,
+    "tabs": true,
+    "statusBar": true,
+    "fileHeader": true,
+    "sideDockLeft": true,
+    "sideDockRight": true
+  },
+  "integrations": [
+    {
+      "enabled": true,
+      "available": true,
+      "name": "cm-typewriter-scroll-obsidian",
+      "description": "Automatically enable typewriter scroll when entering Zen mode.",
+      "options": {
+        "zenEnabled": {
+          "active": true,
+          "description": "Enable the darkening of non-active lines"
+        }
+      }
+    }
+  ]
+}

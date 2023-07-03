@@ -1,0 +1,63 @@
+/*
+    show-links.css snippet
+
+    by @narand, modified by @conbas2019, again by @Moonbase59
+    see https://forum.obsidian.md/t/external-link-hover-view-url/2876/10?u=moonbase59
+
+    2021-05-26 Matthias C. Hormann (Moonbase59)
+    Made it more robust, for those who use crazy link styles. ;-)
+    Added cutoff long links with an ellipsis.
+    Added wrap/no-wrap option, see end of file. Best of both worlds! ;-)
+
+    TODO:
+      - With presentations, shows shifted towards the middle.
+      - In Obsidian Leaflet popups, appears in the popup.
+
+*/
+
+a.external-link {
+  position: relative;
+}
+
+a.external-link:before {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0 0.5em;
+  color: var(--text-normal);
+  background-color: var(--background-primary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0 0.4em 0 0;
+  font-family: var(--default-font);
+  font-size: initial;
+  font-style: initial;
+  font-weight: initial;
+  text-decoration: initial;
+  display: none;
+  z-index: 1000;
+  content: attr(href);
+  max-width: 98%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a.external-link:hover:before {
+  display: block;
+}
+
+a.external-link:after {
+  position: absolute;
+  padding: 0px 8px 0px 8px;
+  color: var(--text-normal);
+  background-color: var(--background-primary-alt);
+  border-radius: 3px;
+  font-size: 80%;
+  display: none;
+  z-index: 1000;
+  top: 1.8em;
+  content: attr(href)
+}
+
+a.external-link:hover:after {
+  display: inline; 
+}

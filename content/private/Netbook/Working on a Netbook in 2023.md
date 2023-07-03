@@ -56,7 +56,7 @@ That initial experiment made me discover a few things;
 	- It's GUI is stuck in the mid-2000s, which would be acceptable if it wasn't stuck in the 'Pre-Ubuntu' era of GUI design.
 	- It doesn't follow typical \*nix file conventions and installing software from source or outside it's typical package manager causes major headaches.
 3) Gentoo is terrible for a low-end netbook; it may work if you cross-compile everything from a powerful computer. But I gave up after two hours of compiling before installation was completed.
-3) [Void Linux](private/Void%20Linux.md) is great, and I would consider using it for a daily driver.
+3) [Void Linux](private/Netbook/Void%20Linux.md) is great, and I would consider using it for a daily driver.
 	- The XBPS package manger is actually pretty cool, and pretty easy to use.
 	- The way it handles services (i.e. linking them)
 	- Very minimal, which let me build up what I needed piece-by-piece
@@ -68,4 +68,7 @@ That initial experiment made me discover a few things;
 
 I put that notebook away, after using it as effectively a digital typewriter with git capabilities for an old creative writing project. But recently I picked it back up to use for this website. So I wiped it from scratch and set it up.
 
-1) Install Void Linux
+- [ ] #TODO Write about the vague process of setting it up
+- [ ] #TODO Write about killing it
+- [ ] #TODO Write about how educational it was setting it up and writing a script for it
+- [ ] #TODO Ironic ending about runing it after getting it setup

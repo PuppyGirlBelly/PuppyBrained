@@ -1,2 +1,0 @@
-export EDITOR="$HOME/.local/bin/lvim"
-export TERMINAL="xterm"
