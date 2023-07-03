@@ -3,6 +3,7 @@ title: How to Self-Administer Medical Injections Sustainably
 tags: [instructions, transgender, injections, medical]
 created: Wednesday, August 3rd 2022, 7:54:56 pm
 modified: Sunday, June 18th 2023, 5:37:36 pm
+enableToc: true
 ---
 
 This guide is written under the assumption that you are doing Intramuscular rather than Subcutaneous shots; though the vast majority is applicable to both injection methods.

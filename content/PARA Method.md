@@ -2,15 +2,14 @@
 title: PARA Method
 tags: [noteTaking, secondBrain]
 created: Tuesday, June 27th 2023, 3:04:24 pm
-modified: Monday, July 3rd 2023, 12:54:03 pm
+modified: Monday, July 3rd 2023, 1:08:38 pm
+enableToc: false
 ---
 # PARA Method
 
 > [!cite]- Source
 > 
 > Notes from Tiago Forte's [Building a Second Brain: The Definitive Introductory Guide](https://fortelabs.com/blog/basboverview/)
-
-#noteTaking #secondBrain
 
 The PARA method is a technique used to organize information that is flexbile and comprehensive.
 

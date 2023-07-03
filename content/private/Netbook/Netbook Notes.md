@@ -4,6 +4,7 @@ created: Tuesday, June 20th 2023, 11:37:29 am
 modified: Thursday, June 22nd 2023, 12:03:03 am
 aliases:
   - Todos
+enableToc: false
 ---
 # Todos
 

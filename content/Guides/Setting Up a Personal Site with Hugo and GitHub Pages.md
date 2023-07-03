@@ -2,7 +2,8 @@
 title: Setting Up a Personal Site with Hugo and GitHub Pages
 tags: [archive, hugo, github, website, instructions]
 created: Wednesday, June 2nd 2021, 10:52:39 am
-modified: Sunday, June 18th 2023, 5:47:53 pm
+modified: Monday, July 3rd 2023, 2:03:30 pm
+enableToc: true
 ---
 
 {{< youtube -LgYzva-xq8 >}}
@@ -15,7 +16,7 @@ Likewise, it assumes you've already installed git and have an account with GitHu
 
 So with that said, lets get started!
 
-## 1) Installing Hugo
+# 1) Installing Hugo
 
 So first thing first, you'll need to install Hugo onto your machine. So a major caveat is that you **shouldn't** install via apt; the repos are out of date and you'll likely find issues with themes (like I did).
 
@@ -32,7 +33,7 @@ So the recommendation is to download via snap, homebrew, or the latest.deb archi
 
 With that all done, you've installed Hugo onto your system! 😊
 
-## 2) Creating Your Site and Installing a Theme
+# 2) Creating Your Site and Installing a Theme
 
 So now you're all ready to prepare your site!
 
@@ -58,7 +59,7 @@ git submodule add https://GitHub.com/theNewDynamic/gohugo-theme-ananke.git theme
 echo theme = \"ananke\" >> config.toml
 ```
 
-## 3) Adding Content
+# 3) Adding Content
 
 So with that out of the way, might as well add some content to let you test the website and theme!
 
@@ -80,7 +81,7 @@ draft: true
 
 That line will prevent your pages/posts from actually being shown when you upload your site. So whenever you complete your drafts, make sure to change the `true` to `false`.
 
-### 3.5) Previewing Your Website before Uploading
+## 3.5) Previewing Your Website before Uploading
 
 So uploading your repo to GitHub, and then having to wait for it to compile can be a lengthy and annoying process. So to speed up the process, you can instead set up a local web server to preview your site without needing to upload. The local updates automatically which allows for instantaneous previews!
 
@@ -92,7 +93,7 @@ hugo server
 
 Then enter the address `http://localhost:1313` into your browser, and you should see your website! Now if you make any changes to your post, you should see them happen instantly! If not, then just refresh the page!
 
-## 4) Preparing GitHub Pages
+# 4) Preparing GitHub Pages
 
 Alright, so you got the site ready. Now to host it!
 
@@ -108,7 +109,7 @@ git push -u origin main
 
 This will let you use git to upload your site to the GitHub repo now. But it still won't make the site work properly yet! For that, we need to make it so that GitHub generates a branch on your repo that actually holds the website itself!
 
-## 5) Setting up GitHub Actions
+# 5) Setting up GitHub Actions
 
 So! GitHub Actions! If you aren't familiar, it's basically automation for your builds. Often used to compile and test code on push; and in our case, we're gonna set it up so that pushing our repo will make GitHub use Hugo to generate it's own copy of your site on a separate branch!
 
@@ -151,7 +152,7 @@ jobs:
 
 Then click the green `Start Commit` button in the top right corner.
 
-## 6) Enabling GitHub Pages
+# 6) Enabling GitHub Pages
 
 So, for the final step. Go to the settings page of your repository; and on the sidebar select `Pages`.
 

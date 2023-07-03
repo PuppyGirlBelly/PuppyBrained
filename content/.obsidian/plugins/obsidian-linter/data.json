@@ -26,8 +26,8 @@
     },
     "move-tags-to-yaml": {
       "enabled": true,
-      "how-to-handle-existing-tags": "Nothing",
-      "tags-to-ignore": ""
+      "how-to-handle-existing-tags": "Remove whole tag",
+      "tags-to-ignore": "#TODO"
     },
     "remove-yaml-keys": {
       "enabled": false,
@@ -240,7 +240,7 @@
   "displayChanged": true,
   "settingsConvertedToConfigKeyValues": true,
   "foldersToIgnore": [
-    "templates",
+    "private/templates",
     "_index"
   ],
   "linterLocale": "en-ca",

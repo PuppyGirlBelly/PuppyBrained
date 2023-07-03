@@ -2,15 +2,14 @@
 tags: [noteTaking, secondBrain]
 title: Second Brain
 created: Tuesday, June 27th 2023, 11:47:40 am
-modified: Monday, July 3rd 2023, 1:06:30 pm
+modified: Monday, July 3rd 2023, 1:08:44 pm
+enableToc: false
 ---
 # Second Brain
 
 > [!cite]- Source
 > 
 > Notes from Tiago Forte's [Building a Second Brain: The Definitive Introductory Guide](https://fortelabs.com/blog/basboverview/)
-
-#noteTaking #secondBrain
 
 A second brain is a repository of knowledge and resources. It is systematized to make it **easy to find and recall information** and act on it (whether it is reviewed, utilized, or deleted).
 

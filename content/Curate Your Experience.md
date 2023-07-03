@@ -2,15 +2,14 @@
 tags: [digitalWellbeing]
 title: Curate Your Experience
 created: Tuesday, June 27th 2023, 2:12:14 pm
-modified: Monday, July 3rd 2023, 12:57:03 pm
+modified: Monday, July 3rd 2023, 1:08:33 pm
+enableToc: false
 ---
 # Curate Your Experience
 
 > [!cite]- Source
 > 
 > Notes from Tiago Forte's [Building a Second Brain: The Definitive Introductory Guide](https://fortelabs.com/blog/basboverview/)
-
-#digitalWellbeing
 
 People are often stuck in passive content loops, which look like endless scrolling and such.
 

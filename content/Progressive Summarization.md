@@ -4,15 +4,14 @@ date created: Tuesday, June 27th 2023, 11:36:17 am
 date modified: Tuesday, June 27th 2023, 3:31:00 pm
 tags: [noteTaking, secondBrain]
 created: Monday, July 3rd 2023, 12:08:30 pm
-modified: Monday, July 3rd 2023, 12:58:06 pm
+modified: Monday, July 3rd 2023, 1:08:41 pm
+enableToc: false
 ---
 # Progressive Summarization
 
 > [!cite]- Source
 > 
 > [Progressive Summarization: A Practical Technique for Designing Discoverable Notes - Forte Labs](https://fortelabs.com/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/)
-
-#noteTaking #secondBrain
 
 Maintaining information through time is easy, as recording and saving data is trivial. However, **the real difficulty is maintaining knowledge through time**. Having the ability to recall information that is relevant to you in spite of the frequency and usage of the information previously.
 
