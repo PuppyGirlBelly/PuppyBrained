@@ -2,11 +2,12 @@
 tags: [noteTaking, secondBrain]
 title: Second Brain
 created: Tuesday, June 27th 2023, 11:47:40 am
-modified: Monday, July 3rd 2023, 12:56:50 pm
+modified: Monday, July 3rd 2023, 1:06:30 pm
 ---
 # Second Brain
 
 > [!cite]- Source
+> 
 > Notes from Tiago Forte's [Building a Second Brain: The Definitive Introductory Guide](https://fortelabs.com/blog/basboverview/)
 
 #noteTaking #secondBrain

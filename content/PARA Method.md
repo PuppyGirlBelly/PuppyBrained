@@ -7,6 +7,7 @@ modified: Monday, July 3rd 2023, 12:54:03 pm
 # PARA Method
 
 > [!cite]- Source
+> 
 > Notes from Tiago Forte's [Building a Second Brain: The Definitive Introductory Guide](https://fortelabs.com/blog/basboverview/)
 
 #noteTaking #secondBrain

@@ -9,6 +9,7 @@ modified: Monday, July 3rd 2023, 12:58:06 pm
 # Progressive Summarization
 
 > [!cite]- Source
+> 
 > [Progressive Summarization: A Practical Technique for Designing Discoverable Notes - Forte Labs](https://fortelabs.com/blog/progressive-summarization-a-practical-technique-for-designing-discoverable-notes/)
 
 #noteTaking #secondBrain

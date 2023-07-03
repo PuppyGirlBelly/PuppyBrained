@@ -7,6 +7,7 @@ modified: Monday, July 3rd 2023, 12:57:03 pm
 # Curate Your Experience
 
 > [!cite]- Source
+> 
 > Notes from Tiago Forte's [Building a Second Brain: The Definitive Introductory Guide](https://fortelabs.com/blog/basboverview/)
 
 #digitalWellbeing
