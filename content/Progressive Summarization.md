@@ -4,10 +4,9 @@ date created: Tuesday, June 27th 2023, 11:36:17 am
 date modified: Tuesday, June 27th 2023, 3:31:00 pm
 tags: [noteTaking, secondBrain]
 created: Monday, July 3rd 2023, 12:08:30 pm
-modified: Monday, July 3rd 2023, 1:08:41 pm
+modified: Monday, July 3rd 2023, 4:23:48 pm
 enableToc: false
 ---
-# Progressive Summarization
 
 > [!cite]- Source
 > 

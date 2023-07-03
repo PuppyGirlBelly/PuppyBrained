@@ -2,10 +2,9 @@
 title: PARA Method
 tags: [noteTaking, secondBrain]
 created: Tuesday, June 27th 2023, 3:04:24 pm
-modified: Monday, July 3rd 2023, 1:08:38 pm
+modified: Monday, July 3rd 2023, 4:23:44 pm
 enableToc: false
 ---
-# PARA Method
 
 > [!cite]- Source
 > 

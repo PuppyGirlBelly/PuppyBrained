@@ -2,10 +2,9 @@
 tags: [noteTaking, secondBrain]
 title: Second Brain
 created: Tuesday, June 27th 2023, 11:47:40 am
-modified: Monday, July 3rd 2023, 1:08:44 pm
+modified: Monday, July 3rd 2023, 4:23:51 pm
 enableToc: false
 ---
-# Second Brain
 
 > [!cite]- Source
 > 

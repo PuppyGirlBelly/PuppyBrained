@@ -2,10 +2,9 @@
 tags: [digitalWellbeing]
 title: Curate Your Experience
 created: Tuesday, June 27th 2023, 2:12:14 pm
-modified: Monday, July 3rd 2023, 1:08:33 pm
+modified: Monday, July 3rd 2023, 4:23:32 pm
 enableToc: false
 ---
-# Curate Your Experience
 
 > [!cite]- Source
 > 
