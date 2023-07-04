@@ -154,6 +154,7 @@ header, article, .page-end, footer {
 header {
   margin-top: 3em;
   flex-wrap: wrap;
+  row-gap: 1em;
   align-items: center;
   justify-content: center;
 }
