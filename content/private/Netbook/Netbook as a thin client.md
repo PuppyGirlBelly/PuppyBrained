@@ -1,0 +1,4 @@
+- [ ] #TODO Write about the vague process of setting it up
+- [ ] #TODO Write about killing it
+- [ ] #TODO Write about how educational it was setting it up and writing a script for it
+- [ ] #TODO Ironic ending about runing it after getting it setup
