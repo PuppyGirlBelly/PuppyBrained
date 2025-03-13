@@ -13,10 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/Netbook Notes.md",
+                "file": "private/templates/post.md",
                 "mode": "source",
-                "backlinks": true,
-                "source": false
+                "backlinks": false,
+                "source": true
               }
             }
           }
@@ -86,7 +86,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "private/Netbook Notes.md",
+            "file": "private/templates/post.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "private/Netbook Notes.md",
+            "file": "private/templates/post.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -115,7 +115,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "private/Netbook Notes.md"
+            "file": "private/templates/post.md"
           }
         }
       }
@@ -132,6 +132,12 @@
   },
   "active": "dd68b5ed83b61758",
   "lastOpenFiles": [
+    "Archive/Guides/Setting Up a Personal Site with Hugo and GitHub Pages.md",
+    "private/Inbox/Random Ideas.md",
+    "private/Inbox/Digital Gardens, Neocities, and Internet Freedom.md",
+    "Projects/How to Get Good/The Mid-Level Vortex.md",
+    "Archive/Guides/How to Self-Administer Medical Injections Sustainably.md",
+    "Archive/Guides/Injection Checklist and Steps.md",
     "private/My Netbook.md",
     "private/Netbook Notes.md",
     "private/Random Ideas.md",

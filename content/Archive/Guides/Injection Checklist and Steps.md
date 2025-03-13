@@ -4,7 +4,6 @@ tags: [instructions, transgender, injections, medical]
 created: Sunday, June 18th 2023, 5:01:08 pm
 modified: Monday, July 3rd 2023, 4:22:52 pm
 ---
-
 ## Checklist
 
 You'll need the following items;
